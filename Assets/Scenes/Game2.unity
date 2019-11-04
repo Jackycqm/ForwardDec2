@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 237700744}
+  - component: {fileID: 237700745}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -147,13 +148,27 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1995258392}
-  - {fileID: 1765185409}
   - {fileID: 1455552250}
   - {fileID: 312470091}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &237700745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237700743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae20a21093d5bfe49a6fc405d3f10537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  YLowValue: 0.2
+  YOrigional: 1
+  LTrigger: {fileID: 312470090}
+  RTrigger: {fileID: 1455552249}
 --- !u!1 &312470090
 GameObject:
   m_ObjectHideFlags: 0
@@ -164,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 312470091}
   m_Layer: 0
-  m_Name: RTriggerControl
+  m_Name: LTriggerControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -180,9 +195,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1765185409}
   m_Father: {fileID: 237700744}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024991252
 GameObject:
@@ -277,7 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1455552250}
   m_Layer: 0
-  m_Name: LTriggerControl
+  m_Name: RTriggerControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -290,12 +306,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455552249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1995258392}
   m_Father: {fileID: 237700744}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729145741
 GameObject:
@@ -401,7 +418,7 @@ GameObject:
   - component: {fileID: 1765185411}
   - component: {fileID: 1765185410}
   m_Layer: 0
-  m_Name: RTrigger
+  m_Name: LTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,11 +432,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765185408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 237700744}
-  m_RootOrder: 1
+  m_Father: {fileID: 312470091}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1765185410
 BoxCollider:
@@ -492,7 +509,7 @@ GameObject:
   - component: {fileID: 1995258394}
   - component: {fileID: 1995258393}
   m_Layer: 0
-  m_Name: LTrigger
+  m_Name: RTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,10 +523,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1995258391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 237700744}
+  m_Father: {fileID: 1455552250}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1995258393
