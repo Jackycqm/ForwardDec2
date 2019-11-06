@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae20a21093d5bfe49a6fc405d3f10537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  YLowValue: 0.2
+  YLowValue: 0.05
   YOrigional: 1
   LTrigger: {fileID: 312470090}
   RTrigger: {fileID: 1455552249}
