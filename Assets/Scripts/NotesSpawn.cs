@@ -18,7 +18,7 @@ public class NotesSpawn : MonoBehaviour
         //How long is a beat in seconds
 
         float dsptimesong;
-        //https://docs.unity3d.com/ScriptReference/AudioSettings-dspTime.html
+        //
         //how many seconds has passed since song started
     }
 
