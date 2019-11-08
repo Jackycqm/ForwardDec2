@@ -3,9 +3,16 @@
 public class DrumController : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float xNewValue;
 
-    public float YLowValue = 0.2f;
-    public float YOrigional = 1.0f;
+    public float xOrigional;
+
+    public float yNewValue;
+    public float yOrigional;
+
+    public float zNewValue;
+    public float zOrigional;
+
     public GameObject LTrigger;
     public GameObject RTrigger;
 
@@ -25,11 +32,11 @@ public class DrumController : MonoBehaviour
     {
         if (Input.GetKeyDown("left"))
         {
-            LTrigger.transform.localScale = new Vector3(1, YLowValue, 1);
+            LTrigger.transform.localScale = new Vector3(xNewValue, yNewValue, zNewValue);
         }
         else if (Input.GetKeyUp("left"))
         {
-            LTrigger.transform.localScale = new Vector3(1, YOrigional, 1);
+            LTrigger.transform.localScale = new Vector3(xOrigional, yOrigional, zOrigional);
         }
     }
 
@@ -38,11 +45,11 @@ public class DrumController : MonoBehaviour
     {
         if (Input.GetKeyDown("right"))
         {
-            RTrigger.transform.localScale = new Vector3(1, YLowValue, 1);
+            RTrigger.transform.localScale = new Vector3(xNewValue, yNewValue, zNewValue);
         }
         else if (Input.GetKeyUp("right"))
         {
-            RTrigger.transform.localScale = new Vector3(1, YOrigional, 1);
+            RTrigger.transform.localScale = new Vector3(xOrigional, yOrigional, zOrigional);
         }
     }
 }
