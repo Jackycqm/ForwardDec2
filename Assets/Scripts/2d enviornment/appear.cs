@@ -5,28 +5,29 @@ using UnityEngine;
 public class appear : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Camera _theCamera;
-    private float _HalfHeight;
-  	private float _HalfWidth;
-    public float xxx;
-    //private Vector3 newlocation;
+    [SerializeField]
+    private Transform _left;
+    [SerializeField]
+    private Transform _right;
+    private float speed = 1;
+    private Vector3 pl,pr;
+
     void Start()
     {
-      //get camera width
-      _HalfHeight = _theCamera.orthographicSize;
-  		_HalfWidth = _HalfHeight * Screen.width / Screen.height;
-      _theCamera = GetComponent<Camera> ();
+      pl = new Vector3 (_left.position.x, transform.position.y, transform.position.z);
+      pr = new Vector3 (_right.position.x, transform.position.y, transform.position.z);
     }
 
     // Update is called once per frame
-    void Update(){
-
-    }
-
-    void OnTriggerEnter2D()
+    void Update()
     {
-      transform.position = new Vector3 (transform.position.x + _HalfWidth*2 + xxx, transform.position.y, transform.position.z);
-      //newlocation = new Vector3(transform.position.x + _HalfWidth*2 + xxx, transform.position.y, transform.position.z);
+      if (transform.position.x > pl.x) {
+        transform.position = Vector3.MoveTowards(transform.position, pl, speed*Time.deltaTime);
+      }
+      else {
+        transform.position = pr;
+      }
+
     }
 
 }
