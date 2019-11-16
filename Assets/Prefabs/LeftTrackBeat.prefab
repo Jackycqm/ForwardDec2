@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6328642353013160343}
   - component: {fileID: 3180100400444989842}
   - component: {fileID: 6293427174929563159}
+  - component: {fileID: 5941138365230810269}
   m_Layer: 0
-  m_Name: Beat
+  m_Name: LeftTrakBeat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -91,3 +92,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5941138365230810269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270717701436951462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a320f332f4faf84e89779c55a3b581b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LNotes: {fileID: 0}
+  RNotes: {fileID: 0}
+  LOrigin: {fileID: 0}
+  ROrigin: {fileID: 0}
+  LDestination: {fileID: 0}
+  RDestination: {fileID: 0}
+  startTime: 0
+  Speed: 1

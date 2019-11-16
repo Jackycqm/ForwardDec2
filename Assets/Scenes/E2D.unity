@@ -482,6 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _center: {fileID: 1335527073}
+  speed: 20
 --- !u!54 &125185104
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1027,6 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _center: {fileID: 274845519}
+  speed: 20
 --- !u!54 &421503067
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1719,6 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _center: {fileID: 0}
+  speed: 25
 --- !u!1 &574568438 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3498286853063741597, guid: b6c0f2848f7506f458f6762a48148df0,
@@ -2717,11 +2720,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5175802176706777530, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e370cfbb7e17ac84eaf7246f03d920b2, type: 2}
     - target: {fileID: -2730172055407239565, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -2737,14 +2735,19 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7d060b4315fc0db4196e912052f60ccb, type: 2}
+    - target: {fileID: -1101763691178944275, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e370cfbb7e17ac84eaf7246f03d920b2, type: 2}
     - target: {fileID: 402979577344311667, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 40dda59270bba554fb5d85a58f90f90e, type: 2}
-    - target: {fileID: -1101763691178944275, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
+    - target: {fileID: 5175802176706777530, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
         type: 3}
-      propertyPath: m_Materials.Array.data[1]
+      propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: e370cfbb7e17ac84eaf7246f03d920b2, type: 2}
     - target: {fileID: 5519681020263698694, guid: 6437486f317f72e4cba29bfbf0b6ccb4,
@@ -3183,10 +3186,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 7680, y: 690}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3255,11 +3258,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: music bg less
       objectReference: {fileID: 0}
-    - target: {fileID: 6804374471006590677, guid: b6c0f2848f7506f458f6762a48148df0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b6c0f2848f7506f458f6762a48148df0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3313,6 +3311,11 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b6c0f2848f7506f458f6762a48148df0,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804374471006590677, guid: b6c0f2848f7506f458f6762a48148df0,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

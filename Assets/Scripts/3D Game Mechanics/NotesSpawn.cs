@@ -66,3 +66,31 @@ public class NotesSpawn : MonoBehaviour
         //}
     }
 }
+
+//void getBeatPositions(currentTime, interval, sequence)
+//{
+//    The output
+//    const beatPositions = [];
+
+//    const start = currentTime;
+//    const end = currentTime + interval;
+
+//    "fast forward" to where you are in the sequence
+//    let i = 0;
+//    for (; i < sequence.length; i++)
+//    {
+//        if (sequence[i] >= currentTime)
+//        {
+//            break;
+//        };
+//    }
+
+//    calculate the positions
+//    for (let j = i; j < sequence.length; j++)
+//    {
+//        const beat = sequence[j];
+//        if (beat > end) break;
+//        normalize the position relative to the visible interval
+//        beatPositions.push((beat - start) / interval);
+//    }
+//}

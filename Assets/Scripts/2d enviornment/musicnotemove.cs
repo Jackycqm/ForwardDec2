@@ -6,18 +6,19 @@ public class musicnotemove : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
-  	private Transform _center;
-    private  float speed = 25;
-  	private Vector3 _c;
+    private Transform _center;
 
-    void Start()
+    public float speed;
+    private Vector3 _c;
+
+    private void Start()
     {
-      _c = new Vector3 (_center.position.x, transform.position.y, transform.position.z);
+        _c = new Vector3(_center.position.x, transform.position.y, transform.position.z);
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-      transform.position = Vector3.MoveTowards(transform.position, _c, speed*Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _c, speed * Time.deltaTime);
     }
 }

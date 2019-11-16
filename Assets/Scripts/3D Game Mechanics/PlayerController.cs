@@ -1,20 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class DrumController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float xNewValue;
+    public GameObject LTrigger;
+    public GameObject RTrigger;
 
-    public float xOrigional;
+    private float xNewValue = 1;
+    private float xOrigional = 1;
 
     public float yNewValue;
     public float yOrigional;
 
-    public float zNewValue;
-    public float zOrigional;
-
-    public GameObject LTrigger;
-    public GameObject RTrigger;
+    private float zNewValue = 1;
+    private float zOrigional = 1;
 
     private void Start()
     {
