@@ -9,7 +9,7 @@ public class appear : MonoBehaviour
     private Transform _left;
     [SerializeField]
     private Transform _right;
-    private float speed = 1;
+    private float speed = 2;
     private Vector3 pl,pr;
 
     void Start()
