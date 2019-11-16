@@ -5,22 +5,39 @@ using UnityEngine;
 public class inputright : MonoBehaviour
 {
     // Start is called before the first frame update
+
+
+    private RemoteControl remoteControl;
+    public GameObject otherGameObject;
+
+
     private Renderer _t;
     public Color colorBe;
     public GameObject _rc;
 
+    public bool rightispressed;
+
+
+
     void Start()
     {
       _t = GetComponent<Renderer>();
+        remoteControl = otherGameObject.GetComponent<RemoteControl>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-      if (_t.material.color == colorBe && Input.GetKeyDown("right")) {
+
+        rightispressed = remoteControl.rightispressed;
+
+
+
+        if (_t.material.color == colorBe && rightispressed) {
         _rc.SetActive(true);
       }
-      if (Input.GetKeyUp("right")) {
+        if (!rightispressed) {
         _rc.SetActive(false);
       }
     }
