@@ -19,7 +19,6 @@ public class oricolor : MonoBehaviour
     {
       if (other.gameObject.CompareTag ("music")){
         _t.material.color = colorBe;
-        Debug.Log("hIT");
       }
     }
 

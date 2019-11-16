@@ -170,7 +170,7 @@ MonoBehaviour:
   xNewValue: 1
   xOrigional: 1
   yNewValue: 0.05
-  yOrigional: 1
+  yOrigional: 2
   zNewValue: 1
   zOrigional: 1
   LTrigger: {fileID: 312470090}
