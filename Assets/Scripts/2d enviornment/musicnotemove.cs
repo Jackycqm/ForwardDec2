@@ -7,7 +7,7 @@ public class musicnotemove : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField]
   	private Transform _center;
-    private  float speed = 2;
+    private  float speed = 25;
   	private Vector3 _c;
 
     void Start()
