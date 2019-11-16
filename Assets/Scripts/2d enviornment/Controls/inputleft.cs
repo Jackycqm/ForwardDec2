@@ -20,5 +20,8 @@ public class inputleft : MonoBehaviour
       if (_t.material.color == colorBe && Input.GetKeyDown("left")) {
         _lc.SetActive(true);
       }
+      if (Input.GetKeyUp("left")) {
+        _lc.SetActive(false);
+      }
     }
 }

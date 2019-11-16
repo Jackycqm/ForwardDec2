@@ -20,5 +20,8 @@ public class inputright : MonoBehaviour
       if (_t.material.color == colorBe && Input.GetKeyDown("right")) {
         _rc.SetActive(true);
       }
+      if (Input.GetKeyUp("right")) {
+        _rc.SetActive(false);
+      }
     }
 }

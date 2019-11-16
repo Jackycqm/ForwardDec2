@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class musicnotemove : MonoBehaviour
+public class musicleftmove : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField]
@@ -11,22 +11,20 @@ public class musicnotemove : MonoBehaviour
     private Transform _origin;
     public float speed;
     private Vector3 _c,_o;
-
-    private void Start()
+    void Start()
     {
-        _c = new Vector3(_center.position.x, transform.position.y, transform.position.z);
-        _o = new Vector3(_origin.position.x, transform.position.y, transform.position.z);
+      _c = new Vector3(_center.position.x, transform.position.y, transform.position.z);
+      _o = new Vector3(_origin.position.x, transform.position.y, transform.position.z);
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
-      if (transform.position.x > _c.x) {
+      if (transform.position.x < _c.x) {
         transform.position = Vector3.MoveTowards(transform.position, _c, speed * Time.deltaTime);
       }
       else {
         transform.position = _o;
       }
-
     }
 }

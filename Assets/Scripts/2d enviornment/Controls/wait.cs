@@ -8,7 +8,7 @@ public class wait : MonoBehaviour
     public GameObject _this;
     void Start()
     {
-      Invoke("www",0.5f);
+      Invoke("www",0.05f);
     }
 
     // Update is called once per frame
@@ -18,5 +18,7 @@ public class wait : MonoBehaviour
     }
     public void www(){
       _this.SetActive(false);
+      Instantiate(_this,transform.position,transform.rotation);
+      Destroy(gameObject,.5f);
     }
 }
