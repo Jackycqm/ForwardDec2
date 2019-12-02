@@ -17,7 +17,7 @@ public class flowfieldParticle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position += transform.forward * _moveSpeed * Time.deltaTime;
+        transform.position += transform.forward * _moveSpeed * Time.deltaTime;
     }
 
     public void ApplyRotation(Vector3 rotation, float rotateSpeed)

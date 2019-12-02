@@ -17,7 +17,7 @@ public class Videoplaying : MonoBehaviour
 
     void LoadScene(VideoPlayer v)
     {
-      SceneManager.LoadScene ("E2D");
+      SceneManager.LoadScene ("Running");
     }
 
 

@@ -82,6 +82,7 @@ public class AudioFlowField : MonoBehaviour
             if (_useScale)
             {
                 float scale = Mathf.Lerp(_scaleMinMax.x, _scaleMinMax.y, _audioPeer._audioBandBuffer[_noiseFlowfield._particles[i]._audioBand]);
+
                 _noiseFlowfield._particles[i].transform.localScale = new Vector3(scale, scale, scale);
             }
         }
